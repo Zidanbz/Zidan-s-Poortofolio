@@ -51,4 +51,13 @@ document.addEventListener("DOMContentLoaded", function () {
       navLinks.classList.remove("active");
     }
   });
+
+  // Tambahkan event listener untuk link Home
+  document.querySelector(".home-link").addEventListener("click", function (e) {
+    e.preventDefault(); // Mencegah default behavior link
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Membuat scroll menjadi smooth
+    });
+  });
 });
