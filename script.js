@@ -1,4 +1,3 @@
-// Buat file script.js baru dan tambahkan kode ini
 document.addEventListener("DOMContentLoaded", function () {
   // Smooth scroll untuk link navigasi
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -60,4 +59,35 @@ document.addEventListener("DOMContentLoaded", function () {
       behavior: "smooth", // Membuat scroll menjadi smooth
     });
   });
+
+  // Tambahkan kode ini di dalam DOMContentLoaded
+  let currentLang = "en";
+  const languageBtn = document.getElementById("languageBtn");
+
+  function updateLanguage(lang) {
+    currentLang = lang;
+    const elements = document.querySelectorAll("[data-translate]");
+
+    elements.forEach((element) => {
+      const key = element.getAttribute("data-translate");
+      if (translations[lang][key]) {
+        element.textContent = translations[lang][key];
+      }
+    });
+
+    // Update tombol bahasa
+    languageBtn.querySelector("span").textContent = lang.toUpperCase();
+
+    // Simpan preferensi bahasa di localStorage
+    localStorage.setItem("preferredLanguage", lang);
+  }
+
+  languageBtn.addEventListener("click", () => {
+    const newLang = currentLang === "en" ? "id" : "en";
+    updateLanguage(newLang);
+  });
+
+  // Load bahasa yang tersimpan atau default ke English
+  const savedLang = localStorage.getItem("preferredLanguage") || "en";
+  updateLanguage(savedLang);
 });

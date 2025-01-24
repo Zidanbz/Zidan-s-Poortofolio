@@ -321,3 +321,24 @@ body {
 .home-link:hover {
   color: #007bff; /* Warna saat hover */
 }
+
+.language-switcher button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.language-switcher button:hover {
+  background-color: #6a00f4;
+}
+
+.language-switcher i {
+  font-size: 1.2rem;
+}

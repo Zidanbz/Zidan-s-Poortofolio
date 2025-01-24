@@ -23,17 +23,23 @@
           <span class="bar"></span>
         </div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" data-translate="about">About</a></li>
+          <li><a href="#education" data-translate="education">Education</a></li>
+          <li><a href="#skills" data-translate="skills">Skills</a></li>
+          <li><a href="#projects" data-translate="projects">Projects</a></li>
+          <li><a href="#contact" data-translate="contact">Contact</a></li>
+          <li class="language-switcher">
+            <button id="languageBtn">
+              <i class="fas fa-globe"></i>
+              <span>EN</span>
+            </button>
+          </li>
         </ul>
       </div>
     </nav>
     <div class="container">
       <div class="header" id="about">
-        <h1>About me</h1>
+        <h1 data-translate="aboutMe">About me</h1>
         <!-- <div class="profile-pic">
           <img
             alt="Profile picture of a person standing with a thoughtful expression"
@@ -44,12 +50,12 @@
         </div> -->
       </div>
       <div class="content">
-        <p>
+        <p data-translate="introduction">
           Hi! I'm Muh. Reza. I'm a Website developer and Information Technology
           student at the Muslim University of Indonesia, Faculty of Computer
           Science since 2022.
         </p>
-        <p>
+        <p data-translate="goal">
           My Goal: To challenge myself in new environments to learn, develop,
           and enhance my skills through various projects and contribute more
           with my abilities.
@@ -70,25 +76,27 @@
         </div>
       </div>
       <div class="section" id="education">
-        <h2>Education</h2>
-        <p>2022 - Present</p>
-        <p>Muslim University of Indonesia - Information Technology</p>
+        <h2 data-translate="education">Education</h2>
+        <p data-translate="year">2022 - Present</p>
+        <p data-translate="university">
+          Muslim University of Indonesia - Information Technology
+        </p>
       </div>
       <div class="section" id="skills">
-        <h2>Soft skill</h2>
+        <h2 data-translate="skillSet">Soft skill</h2>
         <div class="row">
           <div class="column">
-            <p>Teamwork</p>
-            <p>Communication</p>
+            <p data-translate="teamwork">Teamwork</p>
+            <p data-translate="communication">Communication</p>
           </div>
           <div class="column">
-            <p>Critical Thinking</p>
-            <p>Time Management</p>
+            <p data-translate="CriticalThinking">Critical Thinking</p>
+            <p data-translate="timeManagement">Time Management</p>
           </div>
         </div>
       </div>
       <div class="section">
-        <h2>Technical skill</h2>
+        <h2 data-translate="technicalSkill">Technical skill</h2>
         <div class="skills">
           <div>
             <img
@@ -121,22 +129,22 @@
       </div>
 
       <div class="section">
-        <h2>Skill set</h2>
+        <h2 data-translate="skillSet">Skill set</h2>
         <div class="row">
           <div class="column">
-            <p>User research</p>
-            <p>Brainstorming</p>
-            <p>Prototyping</p>
+            <p data-translate="userResearch">User research</p>
+            <p data-translate="brainstorming">Brainstorming</p>
+            <p data-translate="prototyping">Prototyping</p>
           </div>
           <div class="column">
-            <p>Web Design</p>
-            <p>App Design</p>
+            <p data-translate="webDesign">Web Design</p>
+            <p data-translate="appDesign">App Design</p>
           </div>
         </div>
       </div>
 
       <div class="section">
-        <h2>Programming Skill</h2>
+        <h2 data-translate="programmingSkill">Programming Skill</h2>
         <div class="row">
           <div class="column">
             <p>HTML</p>
@@ -149,9 +157,11 @@
         </div>
       </div>
       <div class="section" id="projects">
-        <h2>My Projects</h2>
+        <h2 data-translate="myProjects">My Projects</h2>
         <div class="web-experience">
-          <p>I have created several websites that you can see below:</p>
+          <p data-translate="webExperience">
+            I have created several websites that you can see below:
+          </p>
 
           <div class="web-item">
             <img
@@ -160,12 +170,17 @@
               src="assets/bmi.png"
               width="600"
             />
-            <p>
-              <strong>Body Check</strong>: This website is built using simple
-              HTML, CSS, and JavaScript, which determines the Body Mass Index
-              and provides activity recommendations based on the results.
+
+            <strong>Body Check:</strong>
+            <p data-translate="bodyCheckDescription">
+              website is built using simple HTML, CSS, and JavaScript, which
+              determines the Body Mass Index and provides activity
+              recommendations based on the results.
             </p>
-            <a href="https://body-check-six.vercel.app/" target="_blank"
+            <a
+              href="https://body-check-six.vercel.app/"
+              target="_blank"
+              data-translate="visitWebsite"
               >Visit Website</a
             >
           </div>
@@ -177,12 +192,16 @@
               src="assets/website1.png"
               width="600"
             />
-            <p>
-              <strong>Anime List</strong>: I created this website following Dea
-              Afrizal's YouTube tutorial to learn NextJS. This website
-              implements a Public API to display all available anime.
+            <strong>Anime List:</strong>
+            <p data-translate="animeList">
+              I created this website following Dea Afrizal's YouTube tutorial to
+              learn NextJS. This website implements a Public API to display all
+              available anime.
             </p>
-            <a href="https://reza-anime-list.vercel.app/" target="_blank"
+            <a
+              href="https://reza-anime-list.vercel.app/"
+              target="_blank"
+              data-translate="visitWebsite"
               >Visit Website</a
             >
           </div>
@@ -194,11 +213,16 @@
               src="assets/aplikasi.png"
               width="600"
             />
-            <p>
-              <strong>Mobile App</strong>: This is a Mobile App currently under
-              development using Flutter.
+            <strong>Mobile App Mentorme:</strong>
+            <p data-translate="mobileApp">
+              This is a Mobile App currently under development using Flutter.
             </p>
-            <a href="https://example3.com" target="_blank">Coming SOON!</a>
+            <a
+              href="https://mentor-me-blush.vercel.app/"
+              target="_blank"
+              data-translate="comingSoon"
+              >Coming SOON!</a
+            >
           </div>
 
           <div class="web-item">
@@ -208,12 +232,15 @@
               src="assets/sikecil.png"
               width="600"
             />
-            <p>
-              <strong>Si Kecil Cerdas</strong>: This website provides child
-              stimulation recommendations appropriate for children aged 0-24
-              months.
+            <strong>Si Kecil Cerdas:</strong>
+            <p data-translate="siKecilCerdas">
+              This website provides child stimulation recommendations
+              appropriate for children aged 0-24 months.
             </p>
-            <a href="https://si-kecil-cerdas.vercel.app/" target="_blank"
+            <a
+              href="https://si-kecil-cerdas.vercel.app/"
+              target="_blank"
+              data-translate="visitWebsite"
               >Visit Website!</a
             >
           </div>
@@ -225,25 +252,28 @@
               src="assets/diet.png"
               width="600"
             />
-            <p>
-              <strong>Health Diet</strong>: This website provides diet
-              recommendations based on user's medical history, aimed at those
-              who want to maintain their health but are unsure about the steps
-              to take.
+            <strong>Health Diet:</strong>
+            <p data-translate="healthDiet">
+              This website provides diet recommendations based on user's medical
+              history, aimed at those who want to maintain their health but are
+              unsure about the steps to take.
             </p>
-            <a href="https://healtdiet.vercel.app/" target="_blank"
+            <a
+              href="https://healtdiet.vercel.app/"
+              target="_blank"
+              data-translate="visitWebsite"
               >Visit Website</a
             >
           </div>
         </div>
       </div>
       <div class="section">
-        <h2>Interest</h2>
+        <h2 data-translate="interest">Interest</h2>
         <p>Design Trends</p>
         <p>Technology</p>
       </div>
       <div class="section">
-        <h2>Languages</h2>
+        <h2 data-translate="languages">Languages</h2>
         <p>Indonesian (Native)</p>
         <p>English (Pre-intermediate)</p>
       </div>
@@ -253,7 +283,7 @@
         <div class="footer-section">
           <h3>Contact Me</h3>
           <p><i class="fas fa-envelope"></i> muh.reza2441@gmail.com</p>
-          <p><i class="fas fa-phone"></i> +62 852-5626-0765</p>
+          <p><i class="fas fa-phone"></i> +62 851-4170-5154</p>
           <p><i class="fas fa-map-marker-alt"></i> Makassar, Indonesia</p>
         </div>
         <div class="footer-section">
@@ -275,6 +305,7 @@
         <p>&copy; 2024 Muh Reza. All rights reserved.</p>
       </div>
     </footer>
+    <script src="translations.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

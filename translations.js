@@ -1,0 +1,93 @@
+const translations = {
+  en: {
+    about: "About",
+    education: "Education",
+    skills: "Skills",
+    projects: "Projects",
+    contact: "Contact",
+    aboutMe: "About me",
+    introduction:
+      "Hi! I'm Muh. Reza. I'm a Website developer and Information Technology student at the Muslim University of Indonesia, Faculty of Computer Science since 2022.",
+    goal: "My Goal: To challenge myself in new environments to learn, develop, and enhance my skills through various projects and contribute more with my abilities.",
+    softSkill: "Soft skill",
+    technicalSkill: "Technical skill",
+    skillSet: "Skill set",
+    programmingSkill: "Programming Skill",
+    myProjects: "My Projects",
+    interest: "Interest",
+    languages: "Languages",
+    contactMe: "Contact Me",
+    socialMedia: "Social Media",
+    allRights: "All rights reserved.",
+    year: "2022 - Present",
+    university: "Muslim University of Indonesia - Information Technology",
+    teamwork: "Teamwork",
+    communication: "Communication",
+    CriticalThinking: "Critical Thinking",
+    timeManagement: "Time Management",
+    userResearch: "User research",
+    brainstorming: "Brainstorming",
+    prototyping: "Prototyping",
+    webDesign: "Web Design",
+    appDesign: "App Design",
+    webExperience: "I have created several websites that you can see below:",
+    visitWebsite: "Visit Website",
+    comingSoon: "Coming SOON!",
+    bodyCheckDescription:
+      "Website is built using simple HTML, CSS, and JavaScript, which determines the Body Mass Index and provides activity recommendations based on the results.",
+    animeList:
+      "I created this website following Dea Afrizal's YouTube tutorial to learn NextJS. This website implements a Public API to display all available anime.",
+    mobileApp:
+      "This is a Mobile App currently under development using Flutter.",
+    siKecilCerdas:
+      "This website provides child stimulation recommendations appropriate for children aged 0-24 months.",
+    healthDiet:
+      "This website provides diet recommendations based on user's medical history, aimed at those who want to maintain their health but are unsure about the steps to take.",
+  },
+  id: {
+    about: "Tentang",
+    education: "Pendidikan",
+    skills: "Keahlian",
+    projects: "Proyek",
+    contact: "Kontak",
+    aboutMe: "Tentang Saya",
+    introduction:
+      "Hai! Saya Muh. Reza. Saya adalah pengembang Website dan mahasiswa Teknologi Informasi di Universitas Muslim Indonesia, Fakultas Ilmu Komputer sejak 2022.",
+    goal: "Tujuan Saya: Untuk menantang diri dalam lingkungan baru untuk belajar, berkembang, dan meningkatkan keterampilan saya melalui berbagai proyek dan berkontribusi lebih banyak dengan kemampuan saya.",
+    softSkill: "Kemampuan Lunak",
+    technicalSkill: "Kemampuan Teknis",
+    skillSet: "Kumpulan Keahlian",
+    programmingSkill: "Kemampuan Pemrograman",
+    myProjects: "Proyek Saya",
+    interest: "Minat",
+    languages: "Bahasa",
+    contactMe: "Hubungi Saya",
+    socialMedia: "Media Sosial",
+    allRights: "Seluruh hak cipta dilindungi.",
+    year: "2022 - Sekarang",
+    university: "Universitas Muslim Indonesia - Teknologi Informasi",
+    teamwork: "Kerja Tim",
+    communication: "Komunikasi",
+    CriticalThinking: "Berpikir Kritis",
+    timeManagement: "Manajemen Waktu",
+    userResearch: "Penelitian Pengguna",
+    brainstorming: "Bisa Menampaikan Pendapat Dengan Baik",
+    prototyping: "Pembuatan Prototipe",
+    webDesign: "Desain Web",
+    appDesign: "Desain Aplikasi",
+    webExperience:
+      "Saya telah membuat beberapa website yang dapat Anda lihat di bawah ini:",
+    visitWebsite: "Kunjungi Website",
+    comingSoon: "Segera Hadir!",
+    bodyCheckDescription:
+      "Website ini dibangun menggunakan HTML, CSS, dan JavaScript sederhana, yang menentukan Indeks Massa Tubuh dan memberikan rekomendasi aktivitas berdasarkan hasilnya.",
+    animeList:
+      "Saya membuat website ini mengikuti tutorial YouTube Dea Afrizal untuk mempelajari NextJS. Website ini mengimplementasikan API Publik untuk menampilkan semua anime yang tersedia.",
+    mobileApp:
+      "Ini adalah Aplikasi Mobile yang saat ini sedang dalam pengembangan menggunakan Flutter.",
+    siKecilCerdas:
+      "Website ini menyediakan rekomendasi stimulasi anak yang sesuai untuk anak usia 0-24 bulan.",
+    healthDiet:
+      "Website ini memberikan rekomendasi diet berdasarkan riwayat kesehatan pengguna, ditujukan bagi mereka yang ingin menjaga kesehatan tetapi belum yakin dengan langkah-langkah yang harus diambil.",
+  },
+};
