@@ -123,6 +123,9 @@ body {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px ;
   font-size: 1.5rem;
   font-weight: bold;
   color: #ffffff;
@@ -200,11 +203,15 @@ body {
   }
 
   .nav-container {
-    padding: 0.5rem 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
   }
 
   .logo {
-    font-size: 1.2rem;
+   display: flex;
+   align-items: center;
   }
 
   .nav-links {
@@ -341,4 +348,11 @@ body {
 
 .language-switcher i {
   font-size: 1.2rem;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
 }
