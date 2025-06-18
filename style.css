@@ -1,19 +1,24 @@
 body {
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    background-color: #1a1a2e;
-    color: #fff;
-  }
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-image: url('assets/bg.png');
+  /* Sesuaikan path jika beda */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
   .container {
     width: 80%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.25rem;
   }
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 1.25rem 0;
   }
   .header h1 {
     background-color: #6a00f4;
@@ -121,6 +126,7 @@ body {
   align-items: center;
   padding: 1rem 0;
 }
+
 
 .logo {
   display: flex;
@@ -319,7 +325,7 @@ body {
 
 .home-link {
   text-decoration: none;
-  color:ffffff; /* Sesuaikan dengan warna yang diinginkan */
+  color:#ffffff; /* Sesuaikan dengan warna yang diinginkan */
   font-size: 1.5rem;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -342,6 +348,11 @@ body {
   transition: background-color 0.3s;
 }
 
+button,
+a {
+  transition: all 0.3s ease;
+}
+
 .language-switcher button:hover {
   background-color: #6a00f4;
 }
@@ -355,4 +366,51 @@ body {
   height: 40px;
   border-radius: 50%;
 
+}
+
+.header {
+  display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.about-text {
+  flex: 1;
+    min-width: 280px;
+    max-width: 600px;
+}
+
+.about-photo {
+  width: 220px;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 20px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-photo img {
+  width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.web-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.web-item p {
+  text-align: justify;
+  /* Menerapkan rata kanan-kiri pada paragraf */
+  margin-bottom: 15px;
+}
+
+.role {
+  font-style: italic;
 }

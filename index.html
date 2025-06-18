@@ -1,318 +1,279 @@
-<html>
-  <head>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link href="style.css" rel="stylesheet" />
-    <link
-      rel="shortcut icon"
-      href="assets/Background.png"
-      type="image/x-icon"
-    />
-    <title>My Profile</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="logo">
-          <img src="assets/Background.png" alt="navbar" />
-          <a href="#" class="home-link">Muh. Reza</a>
-        </div>
-        <div class="menu-toggle">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="nav-links">
-          <li><a href="#about" data-translate="about">About</a></li>
-          <li><a href="#education" data-translate="education">Education</a></li>
-          <li><a href="#skills" data-translate="skills">Skills</a></li>
-          <li><a href="#projects" data-translate="projects">Projects</a></li>
-          <li><a href="#contact" data-translate="contact">Contact</a></li>
-          <li class="language-switcher">
-            <button id="languageBtn">
-              <i class="fas fa-globe"></i>
-              <span>EN</span>
-            </button>
-          </li>
-        </ul>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="assets/Z.png" type="image/x-icon" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="assets/Z.png" alt="navbar" />
+        <a href="#" class="home-link">Zidan BSA</a>
       </div>
-    </nav>
-    <div class="container">
-      <div class="header" id="about">
-        <h1 data-translate="aboutMe">About me</h1>
-        <!-- <div class="profile-pic">
-          <img
-            alt="Profile picture of a person standing with a thoughtful expression"
-            height="200"
-            src="assets/profile.png"
-            width="150"
-          />
-        </div> -->
+      <div class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-      <div class="content">
-        <p data-translate="introduction">
-          Hi! I'm Muh. Reza. I'm a Website developer and Information Technology
-          student at the Muslim University of Indonesia, Faculty of Computer
-          Science since 2022.
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="language-switcher">
+          <button id="languageBtn">
+            <i class="fas fa-globe"></i> <span>EN</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- About Me Section -->
+    <div class="header" id="about">
+      <div class="about-text">
+        <h1>About me</h1>
+        <p>
+          Hi! I'm Zidan BSA. Founder of MentorMe. I'm a Mobile Developer and Information Technology student at the Muslim University of
+          Indonesia, Faculty of Computer Science since 2022.
         </p>
-        <p data-translate="goal">
-          My Goal: To challenge myself in new environments to learn, develop,
-          and enhance my skills through various projects and contribute more
-          with my abilities.
+        <p>
+          My Goal: To become a proficient and innovative developer who creates impactful digital solutions. I aim to continuously grow my
+          skills in web and mobile development, collaborate with diverse teams, and contribute to projects that bring real value
+          to users and communities. My long-term goal is to lead meaningful tech initiatives and inspire others through
+          technology-driven creativity.
         </p>
-      </div>
-      <div class="contact">
-        <div>
-          <i class="fas fa-envelope"> </i>
-          muh.reza2441@gmail.com
-        </div>
-        <div>
-          <i class="fab fa-linkedin"> </i>
-          linkedin.com/in/muh-reza
-        </div>
-        <div>
-          <i class="fab fa-instagram"> </i>
-          instagram.com/reezaaa_12
+        <div class="contact">
+          <div><i class="fas fa-envelope"></i> zidanbz03@gmail.com</div>
+          <div><i class="fab fa-linkedin"></i> linkedin.com/in/zidan-bsa</div>
+          <div><i class="fab fa-instagram"></i> instagram.com/zidanbsa_</div>
         </div>
       </div>
-      <div class="section" id="education">
-        <h2 data-translate="education">Education</h2>
-        <p data-translate="year">2022 - Present</p>
-        <p data-translate="university">
-          Muslim University of Indonesia - Information Technology
-        </p>
-      </div>
-      <div class="section" id="skills">
-        <h2 data-translate="skillSet">Soft skill</h2>
-        <div class="row">
-          <div class="column">
-            <p data-translate="teamwork">Teamwork</p>
-            <p data-translate="communication">Communication</p>
-          </div>
-          <div class="column">
-            <p data-translate="CriticalThinking">Critical Thinking</p>
-            <p data-translate="timeManagement">Time Management</p>
-          </div>
-        </div>
-      </div>
-      <div class="section">
-        <h2 data-translate="technicalSkill">Technical skill</h2>
-        <div class="skills">
-          <div>
-            <img
-              alt="Adobe Premiere Pro logo"
-              height="40"
-              src="https://storage.googleapis.com/a1aa/image/MUc00vZRWypEJR8Q2dNPgoU1ZiY9gS5mmQDevVRZn30l4Q6JA.jpg"
-              width="40"
-            />
-            Adobe Premiere Pro
-          </div>
-          <div>
-            <img
-              alt="Adobe Illustrator logo"
-              height="40"
-              src="https://storage.googleapis.com/a1aa/image/vKaHR0FENzKsM1jEKL3QBTyzr7aSP7qym03C53wxrIqTcI9E.jpg"
-              width="40"
-            />
-            Adobe Illustrator
-          </div>
-          <div>
-            <img
-              alt="Adobe Photoshop logo"
-              height="40"
-              src="https://storage.googleapis.com/a1aa/image/Sf0zPysFzPwfn0hmYj8kuiseUv1DJF2P2C0plRnDY9QbiDpnA.jpg"
-              width="40"
-            />
-            Adobe Photoshop
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2 data-translate="skillSet">Skill set</h2>
-        <div class="row">
-          <div class="column">
-            <p data-translate="userResearch">User research</p>
-            <p data-translate="brainstorming">Brainstorming</p>
-            <p data-translate="prototyping">Prototyping</p>
-          </div>
-          <div class="column">
-            <p data-translate="webDesign">Web Design</p>
-            <p data-translate="appDesign">App Design</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2 data-translate="programmingSkill">Programming Skill</h2>
-        <div class="row">
-          <div class="column">
-            <p>JavaScript</p>
-            <p>PHP</p>
-          </div>
-          <div class="column">
-            <p>NEXT JS</p>
-            <p>Laravel</p>
-            <p>react</p>
-          </div>
-        </div>
-      </div>
-      <div class="section" id="projects">
-        <h2 data-translate="myProjects">My Projects</h2>
-        <div class="web-experience">
-          <p data-translate="webExperience">
-            I have created several websites that you can see below:
-          </p>
-
-          <div class="web-item">
-            <img
-              alt="Website 1 Screenshot"
-              height="400"
-              src="assets/bmi.png"
-              width="600"
-            />
-
-            <strong>Body Check:</strong>
-            <p data-translate="bodyCheckDescription">
-              website is built using simple HTML, CSS, and JavaScript, which
-              determines the Body Mass Index and provides activity
-              recommendations based on the results.
-            </p>
-            <a
-              href="https://body-check-six.vercel.app/"
-              target="_blank"
-              data-translate="visitWebsite"
-              >Visit Website</a
-            >
-          </div>
-
-          <div class="web-item">
-            <img
-              alt="Website 2 Screenshot"
-              height="400"
-              src="assets/website1.png"
-              width="600"
-            />
-            <strong>Anime List:</strong>
-            <p data-translate="animeList">
-              I created this website following Dea Afrizal's YouTube tutorial to
-              learn NextJS. This website implements a Public API to display all
-              available anime.
-            </p>
-            <a
-              href="https://reza-anime-list.vercel.app/"
-              target="_blank"
-              data-translate="visitWebsite"
-              >Visit Website</a
-            >
-          </div>
-
-          <div class="web-item">
-            <img
-              alt="Website 3 Screenshot"
-              height="400"
-              src="assets/image.png"
-              width="600"
-            />
-            <strong>Mobile App Mentorme:</strong>
-            <p data-translate="mobileApp">
-              This is a Mobile App currently under development using Flutter.
-            </p>
-            <a
-              href="https://mentor-me-blush.vercel.app/"
-              target="_blank"
-              data-translate="comingSoon"
-              >Coming SOON!</a
-            >
-          </div>
-
-          <div class="web-item">
-            <img
-              alt="Website 4 Screenshot"
-              height="400"
-              src="assets/sikecil.png"
-              width="600"
-            />
-            <strong>Si Kecil Cerdas:</strong>
-            <p data-translate="siKecilCerdas">
-              This website provides child stimulation recommendations
-              appropriate for children aged 0-24 months.
-            </p>
-            <a
-              href="https://si-kecil-cerdas.vercel.app/"
-              target="_blank"
-              data-translate="visitWebsite"
-              >Visit Website!</a
-            >
-          </div>
-
-          <div class="web-item">
-            <img
-              alt="Website 5 Screenshot"
-              height="400"
-              src="assets/diet.png"
-              width="600"
-            />
-            <strong>Health Diet:</strong>
-            <p data-translate="healthDiet">
-              This website provides diet recommendations based on user's medical
-              history, aimed at those who want to maintain their health but are
-              unsure about the steps to take.
-            </p>
-            <a
-              href="https://healtdiet.vercel.app/"
-              target="_blank"
-              data-translate="visitWebsite"
-              >Visit Website</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="section">
-        <h2 data-translate="interest">Interest</h2>
-        <p>Design Trends</p>
-        <p>Technology</p>
-      </div>
-      <div class="section">
-        <h2 data-translate="languages">Languages</h2>
-        <p>Indonesian (Native)</p>
-        <p>English (Pre-intermediate)</p>
+      <div class="about-photo">
+        <img src="assets/zidan.png" alt="Foto Profil" />
       </div>
     </div>
-    <footer class="footer" id="contact">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>Contact Me</h3>
-          <p><i class="fas fa-envelope"></i> muh.reza2441@gmail.com</p>
-          <p><i class="fas fa-phone"></i> +62 851-4170-5154</p>
-          <p><i class="fas fa-map-marker-alt"></i> Makassar, Indonesia</p>
+
+    <!-- Education -->
+    <div class="section" id="education">
+      <h2>Education</h2>
+      <p>2024 - PMM 4 Batch 3</p>
+      <p>Institute of Technology Bandung - Information Technology</p>
+      <p>2022 - Present</p>
+      <p>Muslim University of Indonesia - Information Technology</p>
+    </div>
+
+    <!-- Skills -->
+    <div class="section" id="skills">
+      <h2>Soft Skill</h2>
+      <div class="row">
+        <div class="column">
+          <p>Leadership</p>
+          <p>Problem Solving</p>
+          <p>Teamwork</p>
+          <p>Communication</p>
         </div>
-        <div class="footer-section">
-          <h3>Social Media</h3>
-          <div class="social-links">
-            <a href="https://linkedin.com/in/muh-reza" target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="https://instagram.com/reezaaa_12" target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://github.com/MuhReza2004" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-          </div>
+        <div class="column">
+          <p>Collaboration</p>
+          <p>Adaptability</p>
+          <p>Critical Thinking</p>
+          <p>Time Management</p>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Muh Reza. All rights reserved.</p>
+    </div>
+
+    <!-- Technical Skill -->
+    <div class="section">
+      <h2>Technical Skill</h2>
+      <div class="skills">
+        <div>
+          <img src="https://storage.googleapis.com/a1aa/image/MUc00vZRWypEJR8Q2dNPgoU1ZiY9gS5mmQDevVRZn30l4Q6JA.jpg"
+            alt="Adobe Premiere Pro" width="40" height="40" />
+          Adobe Premiere Pro
+        </div>
+        <div>
+          <img src="https://storage.googleapis.com/a1aa/image/vKaHR0FENzKsM1jEKL3QBTyzr7aSP7qym03C53wxrIqTcI9E.jpg"
+            alt="Adobe Illustrator" width="40" height="40" />
+          Adobe Illustrator
+        </div>
+        <div>
+          <img src="https://storage.googleapis.com/a1aa/image/Sf0zPysFzPwfn0hmYj8kuiseUv1DJF2P2C0plRnDY9QbiDpnA.jpg"
+            alt="Adobe Photoshop" width="40" height="40" />
+          Adobe Photoshop
+        </div>
       </div>
-    </footer>
-    <script src="translations.js"></script>
-    <script src="script.js"></script>
-  </body>
+    </div>
+
+    <!-- Skill Set -->
+    <div class="section">
+      <h2>Skill Set</h2>
+      <div class="row">
+        <div class="column">
+          <p>User Research</p>
+          <p>Brainstorming</p>
+          <p>Prototyping</p>
+        </div>
+        <div class="column">
+          <p>Web Design</p>
+          <p>App Design</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Programming Skill -->
+    <div class="section">
+      <h2>Programming Skill</h2>
+      <div class="row">
+        <div class="column">
+          <p>JavaScript</p>
+          <p>Dart</p>
+          <p>PHP</p>
+          <p>Python</p>
+          <p>C++</p>
+        </div>
+        <div class="column">
+          <p>Laravel</p>
+          <p>React</p>
+          <p>Flutter</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="section" id="projects">
+      <h2>My Projects</h2>
+      <div class="web-experience">
+        <div class="web-item">
+          <img src="assets/Dashboard.png" width="600" height="400" alt="Body Check" />
+          <strong>Website MentorMe:</strong>
+          <p class="role">Role : </p>
+          <ul>
+            <li>Back End Developer</li>
+            <li>UI/UX Designer</li>
+            <li>Project Manager</li>
+          </ul>
+          <p>Mentorme is a technology-driven education platform that connects students with professional mentors through offline
+          one-on-one learning. Mentorme offers a solution to students' needs for personalized, focused, and flexible improvement
+          in both academic and non-academic competencies. Through its Marketplace, Learning Path, and Mentoring Consultation
+          features, users can choose mentors based on their desired field of study or career, and schedule direct sessions
+          according to their availability.</p>
+          <a href="https://mentorme.id" target="_blank">Visit Website</a>
+        </div>
+
+        <div class="web-item">
+          <img src="assets/mobile.jpg"  alt="Body Check" />
+          <strong>Mobile MentorMe:</strong>
+          <p class="role">Role : </p>
+          <ul>
+            <li>Back End Developer</li>
+            <li>Front End Developer</li>
+            <li>UI/UX Designer</li>
+            <li>Project Manager</li>
+          </ul>
+          <p>Mentorme is your personal learning partner, offering offline one-on-one mentorship specifically designed for students.
+          We provide personalized and flexible support to help you boost both your academic and non-academic skills. Through our
+          intuitive Marketplace, you can easily find your perfect mentor across various fields, build your own Learning Path, and
+          effortlessly schedule direct sessions that perfectly fit your availability.
+          </p>
+          <a href="https://drive.google.com/file/d/1eDr63qPavXif2mqSnS1rtailBRj2y5Br/view?usp=sharing" target="_blank">Visit Website</a>
+        </div>
+
+        <div class="web-item">
+          <img src="assets/Chat.png" alt="Body Check" />
+          <strong>Mentora: Your Intelligent Virtual Business Assistant</strong>
+          <p class="role">Role : </p>
+          <ul>
+            <li>Back End Developer</li>
+          </ul>
+          <p>Mentora is an innovative virtual business assistant designed to streamline operations and enhance productivity for
+          businesses of all sizes. Leveraging cutting-edge AI and automation, Mentora handles a wide range of tasks, from
+          scheduling and communication management to data analysis and reporting. Our goal is to free up valuable time for
+          business owners and their teams, allowing them to focus on strategic growth and core competencies.
+          </p>
+          <a  target="_blank">On Progress</a>
+        </div>
+
+        <!-- <div class="web-item">
+          <img src="assets/website1.png" width="600" height="400" alt="Anime List" />
+          <strong>Anime List:</strong>
+          <p>Website menampilkan daftar anime menggunakan API publik dan NextJS.</p>
+          <a href="https://reza-anime-list.vercel.app/" target="_blank">Visit Website</a>
+        </div>
+
+        <div class="web-item">
+          <img src="assets/image.png" width="600" height="400" alt="MentorMe" />
+          <strong>Mobile App MentorMe:</strong>
+          <p>Aplikasi mobile dalam pengembangan menggunakan Flutter.</p>
+          <a href="https://mentor-me-blush.vercel.app/" target="_blank">Coming SOON!</a>
+        </div>
+
+        <div class="web-item">
+          <img src="assets/sikecil.png" width="600" height="400" alt="Si Kecil Cerdas" />
+          <strong>Si Kecil Cerdas:</strong>
+          <p>Website untuk rekomendasi stimulasi anak usia 0-24 bulan.</p>
+          <a href="https://si-kecil-cerdas.vercel.app/" target="_blank">Visit Website!</a>
+        </div>
+
+        <div class="web-item">
+          <img src="assets/diet.png" width="600" height="400" alt="Health Diet" />
+          <strong>Health Diet:</strong>
+          <p>Rekomendasi diet berdasarkan riwayat kesehatan pengguna.</p>
+          <a href="https://healtdiet.vercel.app/" target="_blank">Visit Website</a>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Interest -->
+    <div class="section">
+      <h2>Interest</h2>
+      <p>Bussiness</p>
+      <p>Design Trends</p>
+      <p>Technology</p>
+    </div>
+
+    <!-- Languages -->
+    <div class="section">
+      <h2>Languages</h2>
+      <p>Indonesian (Native)</p>
+      <p>English (Pre-intermediate)</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact Me</h3>
+        <p><i class="fas fa-envelope"></i> zidanbz03@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +62 822-9025-9322</p>
+        <p><i class="fas fa-map-marker-alt"></i> Makassar, Indonesia</p>
+      </div>
+      <div class="footer-section">
+        <h3>Social Media</h3>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/zidan-bsa" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://instagram.com/zidanbsa_" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/Zidanbz" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Zidan BSA. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="translations.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
