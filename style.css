@@ -23,8 +23,9 @@ body {
   .header h1 {
     background-color: #6a00f4;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 8px;
     font-size: 24px;
+    display: inline-block;
   }
   .profile-pic {
     border-radius: 20px;
@@ -378,9 +379,10 @@ a {
 }
 
 .about-text {
+  display: inline-block;
   flex: 1;
-    min-width: 280px;
-    max-width: 600px;
+    /* min-width: 280px;
+    max-width: 600px; */
 }
 
 .about-photo {
