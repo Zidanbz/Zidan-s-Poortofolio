@@ -414,3 +414,8 @@ a {
 .role {
   font-style: italic;
 }
+
+.row {
+  display: flex;
+    padding: 40px;
+}
