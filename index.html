@@ -4,318 +4,226 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Profile</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <title>Zidan BSA | Mobile Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
   <link href="style.css" rel="stylesheet" />
   <link rel="shortcut icon" href="assets/Z.png" type="image/x-icon" />
 </head>
 
 <body>
+  <!-- Animated Stars Background -->
+  <div class="stars"></div>
+  <div class="stars2"></div>
+  <div class="stars3"></div>
+
+  <!-- Nebula Background -->
+  <div class="nebula"></div>
+
+  <!-- Galaxy Cursor -->
+  <div class="galaxy-cursor"></div>
+
   <nav class="navbar">
     <div class="nav-container">
-      <div class="logo">
-        <img src="assets/Z.png" alt="navbar" />
-        <a href="#" class="home-link">Zidan BSA</a>
+      <a href="#" class="logo-link">
+        <span class="logo-icon">⭐</span>
+        Zidan BSA
+      </a>
+      <div class="nav-links">
+        <a href="#projects"><i class="fas fa-rocket"></i> Projects</a>
+        <a href="#skills"><i class="fas fa-atom"></i> Skills</a>
+        <a href="#contact"><i class="fas fa-satellite"></i> Contact</a>
       </div>
-      <div class="menu-toggle">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <!-- <li class="language-switcher">
-          <button id="languageBtn">
-            <i class="fas fa-globe"></i> <span>EN</span>
-          </button> -->
-        </li>
-      </ul>
     </div>
   </nav>
 
-  <div class="container">
-    <!-- About Me Section -->
-    <div class="header" id="about">
-      <div class="about-text">
-        <h1>About me</h1>
-        <p>
-          Hi! I'm Zidan BSA. Founder of MentorMe. I'm a Mobile Developer and Information Technology student at the Muslim University of
-          Indonesia, Faculty of Computer Science since 2022.
-        </p>
-        <p>
-          My Goal: To become a proficient and innovative developer who creates impactful digital solutions. I aim to continuously grow my
-          skills in web and mobile development, collaborate with diverse teams, and contribute to projects that bring real value
-          to users and communities. My long-term goal is to lead meaningful tech initiatives and inspire others through
-          technology-driven creativity.
-        </p>
-        <div class="contact">
-          <div><i class="fas fa-envelope"></i> zidanbz03@gmail.com</div>
-          <div><i class="fab fa-linkedin"></i> linkedin.com/in/zidan-bsa</div>
-          <div><i class="fab fa-instagram"></i> instagram.com/zidanbsa_</div>
+  <main class="content-wrapper">
+
+    <header class="hero" id="about">
+      <div class="hero-glow"></div>
+      <img src="assets/zidan.png" alt="Zidan BSA" class="hero-photo">
+      <h1 class="hero-title">
+        <span class="glitch" data-text="Zidan BSA">Zidan BSA</span>
+      </h1>
+      <p class="hero-subtitle">
+        <span class="typing-text">Mobile Developer & Founder of MentorMe</span><br>
+        <span class="subtitle-glow">Menciptakan solusi digital yang berdampak dari Makassar, Indonesia.</span>
+      </p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/zidan-bsa" target="_blank" aria-label="LinkedIn" class="social-btn">
+          <i class="fab fa-linkedin"></i>
+          <span class="social-tooltip">LinkedIn</span>
+        </a>
+        <a href="https://github.com/Zidanbz" target="_blank" aria-label="GitHub" class="social-btn">
+          <i class="fab fa-github"></i>
+          <span class="social-tooltip">GitHub</span>
+        </a>
+        <a href="https://instagram.com/zidanbsa_" target="_blank" aria-label="Instagram" class="social-btn">
+          <i class="fab fa-instagram"></i>
+          <span class="social-tooltip">Instagram</span>
+        </a>
+      </div>
+    </header>
+
+    <section class="content-section" id="projects">
+      <h2 class="section-title">
+        <span class="title-icon">🚀</span>
+        My Projects
+        <div class="title-line"></div>
+      </h2>
+      <div class="project-grid">
+        <div class="project-card" data-tilt>
+          <div class="card-glow"></div>
+          <img src="assets/Dashboard.png" alt="Website MentorMe">
+          <div class="card-content">
+            <h3>Website MentorMe</h3>
+            <p>Platform edukasi yang menghubungkan mahasiswa dengan mentor profesional melalui pembelajaran privat.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">Ekspress Js</span>
+            </div>
+            <span class="role">PM, Backend, UI/UX</span>
+            <a href="https://mentorme.id" target="_blank" class="project-link">
+              <span>Visit Website</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" data-tilt>
+          <div class="card-glow"></div>
+          <img src="assets/10.png" alt="Mobile MentorMe">
+          <div class="card-content">
+            <h3>Mobile MentorMe</h3>
+            <p>Aplikasi mobile pendamping untuk MentorMe, memberikan akses belajar yang lebih fleksibel dan personal.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Firebase</span>
+            </div>
+            <span class="role">Fullstack, UI/UX, PM</span>
+            <a href="https://drive.google.com/file/d/1hYbihiskQXP9Pccb4v-sbNSE8aTtuTVi/view?usp=sharing" target="_blank"
+              class="project-link">
+              <span>Visit App</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" data-tilt>
+          <div class="card-glow"></div>
+          <img src="assets/12.png" alt="Home Workers">
+          <div class="card-content">
+            <h3>Home Workers</h3>
+            <p>Howe adalah sebuah platform marketplace digital inovatif yang dirancang untuk menjembatani kebutuhan masyarakat dengan
+            para penyedia jasa profesional di berbagai bidang.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Ekspress JS</span>
+              <span class="tech-tag">Firebase</span>
+            </div>
+            <span class="role">Fullstack Developer</span>
+            <a href="#" class="project-link in-progress">
+              <span>On Progress</span>
+              <i class="fas fa-cog fa-spin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" data-tilt>
+          <div class="card-glow"></div>
+          <img src="assets/11.png" alt="Pakar Mata App">
+          <div class="card-content">
+            <h3>Pakar Mata</h3>
+            <p>Aplikasi mobile pertama yang saya kembangkan untuk membantu identifikasi dini penyakit mata.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">AI/ML</span>
+              <span class="tech-tag">Dart</span>
+            </div>
+            <span class="role">Fullstack Developer</span>
+            <a href="https://drive.google.com/file/d/1Rd9NBtbmp10GFI0PIRexeDUrXw2XSTSs/view?usp=sharing" target="_blank"
+              class="project-link">
+              <span>Visit App</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="about-photo">
-        <img src="assets/zidan.png" alt="Foto Profil" />
-      </div>
-    </div>
+    </section>
 
-    <!-- Education -->
-    <div class="section" id="education">
-      <h2>Education</h2>
-      <p>2024 - PMM 4 Batch 3</p>
-      <p>Institute of Technology Bandung - Information Technology</p>
-      <p>2022 - Present</p>
-      <p>Muslim University of Indonesia - Information Technology</p>
-    </div>
-
-    <!-- Skills -->
-    <div class="section" id="skills">
-      <h2>Soft Skill</h2>
-      <div class="row">
-        <div class="column">
-          <p>Leadership</p>
-          <p>Problem Solving</p>
-          <p>Teamwork</p>
-          <p>Communication</p>
+    <section class="content-section" id="skills">
+      <h2 class="section-title">
+        <span class="title-icon">⚡</span>
+        Skills & Education
+        <div class="title-line"></div>
+      </h2>
+      <div class="skills-education-grid">
+        <div class="grid-item">
+          <h3><i class="fas fa-code"></i> Programming & Tools</h3>
+          <div class="tag-container">
+            <span class="skill-tag" data-level="90">Dart</span>
+            <span class="skill-tag" data-level="90">Flutter</span>
+            <span class="skill-tag" data-level="85">JavaScript</span>
+            <span class="skill-tag" data-level="80">PHP</span>
+            <span class="skill-tag" data-level="85">Laravel</span>
+            <span class="skill-tag" data-level="75">Python</span>
+            <span class="skill-tag" data-level="80">React</span>
+            <span class="skill-tag" data-level="85">UI/UX Design</span>
+            <span class="skill-tag" data-level="70">Adobe Suite</span>
+          </div>
         </div>
-        <div class="column">
-          <p>Collaboration</p>
-          <p>Adaptability</p>
-          <p>Critical Thinking</p>
-          <p>Time Management</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Technical Skill -->
-    <div class="section">
-      <h2>Technical Skill</h2>
-      <div class="skills">
-        <div>
-          <img src="https://storage.googleapis.com/a1aa/image/MUc00vZRWypEJR8Q2dNPgoU1ZiY9gS5mmQDevVRZn30l4Q6JA.jpg"
-            alt="Adobe Premiere Pro" width="40" height="40" />
-          Adobe Premiere Pro
-        </div>
-        <div>
-          <img src="https://storage.googleapis.com/a1aa/image/vKaHR0FENzKsM1jEKL3QBTyzr7aSP7qym03C53wxrIqTcI9E.jpg"
-            alt="Adobe Illustrator" width="40" height="40" />
-          Adobe Illustrator
-        </div>
-        <div>
-          <img src="https://storage.googleapis.com/a1aa/image/Sf0zPysFzPwfn0hmYj8kuiseUv1DJF2P2C0plRnDY9QbiDpnA.jpg"
-            alt="Adobe Photoshop" width="40" height="40" />
-          Adobe Photoshop
+        <div class="grid-item">
+          <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+          <div class="education-timeline">
+            <div class="education-item">
+              <div class="education-dot"></div>
+              <div class="education-content">
+                <h4>Institut Teknologi Bandung</h4>
+                <p>PMM 4 Batch 3 - Information Technology</p>
+                <span class="education-year">2024</span>
+              </div>
+            </div>
+            <div class="education-item">
+              <div class="education-dot"></div>
+              <div class="education-content">
+                <h4>Universitas Muslim Indonesia</h4>
+                <p>Information Technology</p>
+                <span class="education-year">2022 - Present</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Skill Set -->
-    <div class="section">
-      <h2>Skill Set</h2>
-      <div class="row">
-        <div class="column">
-          <p>User Research</p>
-          <p>Brainstorming</p>
-          <p>Prototyping</p>
-        </div>
-        <div class="column">
-          <p>Web Design</p>
-          <p>App Design</p>
-        </div>
-      </div>
-    </div>
+    <footer class="content-section" id="contact">
+      <h2 class="section-title">
+        <span class="title-icon">🌌</span>
+        Get In Touch
+        <div class="title-line"></div>
+      </h2>
+      <p class="contact-text">
+        Saya selalu terbuka untuk diskusi, kolaborasi, atau sekadar menyapa. <br>
+        Jangan ragu untuk menghubungi saya melalui email.
+      </p>
+      <a href="mailto:zidanbz03@gmail.com" class="email-link">
+        <i class="fas fa-envelope"></i>
+        <span>zidanbz03@gmail.com</span>
+        <div class="email-glow"></div>
+      </a>
+    </footer>
 
-    <!-- Programming Skill -->
-    <div class="section">
-      <h2>Programming Skill</h2>
-      <div class="row">
-        <div class="column">
-          <p>JavaScript</p>
-          <p>Dart</p>
-          <p>PHP</p>
-          <p>Python</p>
-          <p>C++</p>
-        </div>
-        <div class="column">
-          <p>Laravel</p>
-          <p>React</p>
-          <p>Flutter</p>
-        </div>
-      </div>
-    </div>
+  </main>
 
-    <!-- Projects -->
-    <div class="section" id="projects">
-      <h2>My Projects</h2>
-      <div class="web-experience">
-        <div class="web-item">
-          <img src="assets/Dashboard.png" width="600" height="400" alt="Body Check" />
-          <strong>Website MentorMe:</strong>
-          <p class="role">Role : </p>
-          <ul>
-            <li>Back End Developer</li>
-            <li>UI/UX Designer</li>
-            <li>Project Manager</li>
-          </ul>
-          <p>Mentorme is a technology-driven education platform that connects students with professional mentors through offline
-          one-on-one learning. Mentorme offers a solution to students' needs for personalized, focused, and flexible improvement
-          in both academic and non-academic competencies. Through its Marketplace, Learning Path, and Mentoring Consultation
-          features, users can choose mentors based on their desired field of study or career, and schedule direct sessions
-          according to their availability.</p>
-          <a href="https://mentorme.id" target="_blank">Visit Website</a>
-        </div>
-
-        <div class="web-item">
-          <img src="assets/mobile.jpg"  alt="Body Check" />
-          <strong>Mobile MentorMe:</strong>
-          <p class="role">Role : </p>
-          <ul>
-            <li>Back End Developer</li>
-            <li>Front End Developer</li>
-            <li>UI/UX Designer</li>
-            <li>Project Manager</li>
-          </ul>
-          <p>Mentorme is your personal learning partner, offering offline one-on-one mentorship specifically designed for students.
-          We provide personalized and flexible support to help you boost both your academic and non-academic skills. Through our
-          intuitive Marketplace, you can easily find your perfect mentor across various fields, build your own Learning Path, and
-          effortlessly schedule direct sessions that perfectly fit your availability.
-          </p>
-          <a href="https://drive.google.com/file/d/1hYbihiskQXP9Pccb4v-sbNSE8aTtuTVi/view?usp=sharing" target="_blank">Visit App</a>
-        </div>
-
-        <div class="web-item">
-          <img src="assets/Chat.png" alt="Body Check" />
-          <strong>Mentora: Your Intelligent Virtual Business Assistant</strong>
-          <p class="role">Role : </p>
-          <ul>
-            <li>Back End Developer</li>
-          </ul>
-          <p>Mentora is an innovative virtual business assistant designed to streamline operations and enhance productivity for
-          businesses of all sizes. Leveraging cutting-edge AI and automation, Mentora handles a wide range of tasks, from
-          scheduling and communication management to data analysis and reporting. Our goal is to free up valuable time for
-          business owners and their teams, allowing them to focus on strategic growth and core competencies.
-          </p>
-          <a  target="_blank">On Progress</a>
-        </div>
-
-
-        <div class="web-item">
-          <div class = "row">
-          <img src="assets/1.png" alt="Body Check" />
-          <img src="assets/2.png" alt="Body Check" />
-          <img src="assets/3.png" alt="Body Check" />
-        </div>
-          <strong>ProlanisCare.App</strong>
-          <p class="role">Role : </p>
-          <ul>
-            <li>Back End Developer</li>
-          </ul>
-          <p>ProlanisCare.App is a digital application designed to support the implementation of the Chronic Disease Management
-          Program (Prolanis) by BPJS Kesehatan (Indonesia's national health insurance agency). The app helps healthcare
-          professionals to efficiently monitor, record, and manage data of patients with chronic illnesses such as diabetes
-          mellitus and hypertension in an integrated manner.
-          
-          As the backend developer on this project, I was responsible for building and managing the backend system that powers the
-          entire operation of theapplication.
-          </p>
-          <a  target="_blank">On Progress</a>
-        </div>
-        <div class="web-item">
-          <div class = "row">
-          <img src="assets/4.png" alt="Body Check" />
-          <img src="assets/5.png" alt="Body Check" />
-          <img src="assets/6.png" alt="Body Check" />
-        </div>
-          <strong>Pakar Mata</strong>
-          <p class="role">Role : </p>
-          <ul>
-            <li>Fullstack Developer</li>
-          </ul>
-          <p>Pakar Mata is the first mobile application I developed independently using Flutter. The app is designed to help users
-          identify various eye diseases and provide an initial diagnosis based on selected symptoms. Its main features include a
-          list of eye conditions, disease diagnosis, and educational information about possible solutions. I handled the entire
-          development process from UI design to core functionality as part of my learning journey and as an early portfolio
-          project in mobile development.
-          </p>
-          <a href="https://drive.google.com/file/d/1Rd9NBtbmp10GFI0PIRexeDUrXw2XSTSs/view?usp=sharing" target="_blank">Visit
-            App</a>
-        </div>
-
-        <!-- <div class="web-item">
-          <img src="assets/website1.png" width="600" height="400" alt="Anime List" />
-          <strong>Anime List:</strong>
-          <p>Website menampilkan daftar anime menggunakan API publik dan NextJS.</p>
-          <a href="https://reza-anime-list.vercel.app/" target="_blank">Visit Website</a>
-        </div>
-
-        <div class="web-item">
-          <img src="assets/image.png" width="600" height="400" alt="MentorMe" />
-          <strong>Mobile App MentorMe:</strong>
-          <p>Aplikasi mobile dalam pengembangan menggunakan Flutter.</p>
-          <a href="https://mentor-me-blush.vercel.app/" target="_blank">Coming SOON!</a>
-        </div>
-
-        <div class="web-item">
-          <img src="assets/sikecil.png" width="600" height="400" alt="Si Kecil Cerdas" />
-          <strong>Si Kecil Cerdas:</strong>
-          <p>Website untuk rekomendasi stimulasi anak usia 0-24 bulan.</p>
-          <a href="https://si-kecil-cerdas.vercel.app/" target="_blank">Visit Website!</a>
-        </div>
-
-        <div class="web-item">
-          <img src="assets/diet.png" width="600" height="400" alt="Health Diet" />
-          <strong>Health Diet:</strong>
-          <p>Rekomendasi diet berdasarkan riwayat kesehatan pengguna.</p>
-          <a href="https://healtdiet.vercel.app/" target="_blank">Visit Website</a>
-        </div> -->
-      </div>
-    </div>
-
-    <!-- Interest -->
-    <div class="section">
-      <h2>Interest</h2>
-      <p>Bussiness</p>
-      <p>Design Trends</p>
-      <p>Technology</p>
-    </div>
-
-    <!-- Languages -->
-    <div class="section">
-      <h2>Languages</h2>
-      <p>Indonesian (Native)</p>
-      <p>English (Pre-intermediate)</p>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer" id="contact">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3>Contact Me</h3>
-        <p><i class="fas fa-envelope"></i> zidanbz03@gmail.com</p>
-        <p><i class="fas fa-phone"></i> +62 822-9025-9322</p>
-        <p><i class="fas fa-map-marker-alt"></i> Makassar, Indonesia</p>
-      </div>
-      <div class="footer-section">
-        <h3>Social Media</h3>
-        <div class="social-links">
-          <a href="https://linkedin.com/in/zidan-bsa" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://instagram.com/zidanbsa_" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://github.com/Zidanbz" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Zidan BSA. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="translations.js"></script>
   <script src="script.js"></script>
 </body>
 
